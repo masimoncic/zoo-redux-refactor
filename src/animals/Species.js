@@ -11,10 +11,10 @@ function Species(props) {
         <span>Owned: {props.quantity}</span>
       </div>
       <div className='row col-lg-8 offset-lg-2 col-10 offset-1'>
-        <button>Buy ${props.price}</button>
+        <button className='buy-btn btn btn-success'>Buy ${props.price}</button>
       </div>
       <div className='my-2 row col-lg-8 offset-lg-2 col-10 offset-1'>
-        <button>Feed All</button>
+        <button className='feed-btn btn btn-info'>Feed All</button>
       </div>
     </div>
   )

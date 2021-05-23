@@ -3,7 +3,7 @@ import {v4 as uuidv4} from 'uuid';
 
 import gameData from '../utils/gameData';
 import Species from './Species'
-
+import './SpeciesContainer.css'
 
 function SpeciesContainer() {
   let allSpecies = [];

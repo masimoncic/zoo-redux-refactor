@@ -4,3 +4,11 @@ export const changeMoney = (current, add) =>{
     payload: current + add
   }
 }
+
+//incomeplete
+export const buyAnimal = (price, individual) => {
+  return {
+    type: 'BUY_ANIMAL',
+    payload: {price, individual}
+  }
+}
