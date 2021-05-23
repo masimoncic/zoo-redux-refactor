@@ -8,12 +8,10 @@ import './SpeciesContainer.css'
 function SpeciesContainer() {
   let allSpecies = [];
   for (let species in gameData.animalData) {
-    let speciesData = gameData.animalData[species];
     allSpecies.push(
       <Species
         species={species}
-        price={speciesData.price}
-        quantity={speciesData.quantity}
+        speciesData={gameData.animalData[species]}
         key={uuidv4()} 
       />
     )

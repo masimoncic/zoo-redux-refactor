@@ -7,7 +7,7 @@ function MainDisplay(props) {
     <div className='MainDisplay'>
       MAIN DISPLAY
       {props.money}
-      <button onClick={(e) => props.changeMoney(props.money, 100)}>
+      <button onClick={(e) => props.changeMoney(100)}>
         Add money
       </button>
     </div>

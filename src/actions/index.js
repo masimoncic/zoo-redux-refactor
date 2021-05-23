@@ -1,14 +1,14 @@
-export const changeMoney = (current, add) =>{
+export const changeMoney = (add) =>{
   return {
     type: 'CHANGE_MONEY',
-    payload: current + add
+    payload: add
   }
 }
 
 //incomeplete
-export const buyAnimal = (price, individual) => {
+export const addAnimal = (individual, species) => {
   return {
-    type: 'BUY_ANIMAL',
-    payload: {price, individual}
+    type: 'ADD_ANIMAL',
+    payload: {individual, species}
   }
 }

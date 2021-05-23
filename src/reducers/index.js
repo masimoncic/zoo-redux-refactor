@@ -26,9 +26,12 @@ const INITIAL_STATE = {
 export default function (state = INITIAL_STATE, action) {
   switch(action.type) {
     case 'CHANGE_MONEY':
-      return {...state, money: action.payload };
-    case 'BUY_ANIMAL':
-      
+      return {...state, money: state.money + action.payload};
+    case 'ADD_ANIMAL':
+      const newAnimals = {...state.animals};
+      const newIndividuals = [...newAnimals[action.payload.species], action.payload.individual]
+      newAnimals[action.payload.species] = newIndividuals;
+      return {...state, animals: newAnimals};
     default:
       return state;
   }
