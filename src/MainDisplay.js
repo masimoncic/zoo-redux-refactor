@@ -17,7 +17,8 @@ function MainDisplay(props) {
 
 
 const mapStateToProps = state => {
-  return { money: state.money.current }
+  console.log(state)
+  return { money: state.money}
 }
 
 export default connect(mapStateToProps, {changeMoney})(MainDisplay);
